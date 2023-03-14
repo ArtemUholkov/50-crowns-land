@@ -1,0 +1,50 @@
+footer {
+  width: 100%;
+  background-color: var(--footer-color);
+  height: 70px;
+  position: absolute;
+  bottom: 0;
+  z-index: 99;
+}
+.footer_container {
+  width: 78%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 141px;
+}
+.footer_img_pair {
+  display: flex;
+  gap: 141px;
+  align-items: center;
+  justify-content: center;
+}
+.footer_img {
+  opacity: 0.3;
+}
+.visa {
+  width: 78px;
+  height: 25px;
+}
+.mastercard {
+  width: 66.5px;
+  height: 38px;
+}
+.banktransfer {
+  width: 90px;
+  height: 35px;
+}
+.crypto {
+  width: 41px;
+  height: 29px;
+}
+.interac {
+  height: 36px;
+  width: 36px;
+}
+.mifinity {
+  width: 111px;
+  height: 27px;
+}
