@@ -48,3 +48,65 @@ footer {
   width: 111px;
   height: 27px;
 }
+.new_mob_pair {
+  display: none;
+}
+@media (max-width: 1140px) {
+  .footer_container {
+    gap: 50px;
+  }
+  .footer_img_pair {
+    gap: 50px;
+  }
+}
+@media (max-width: 875px) {
+  footer {
+    height: 80px;
+  }
+  .footer_container {
+    gap: 46px;
+    height: auto;
+  }
+  .visa {
+    width: 40px;
+    height: 13px;
+  }
+  .mastercard {
+    width: 40px;
+    height: 23px;
+  }
+  .banktransfer {
+    width: 38px;
+    height: 15px;
+  }
+  .crypto {
+    width: 35px;
+    height: 25px;
+  }
+  .interac {
+    height: 25px;
+    width: 25px;
+  }
+  .mifinity {
+    width: 70px;
+    height: 17px;
+  }
+  .footer_img_pair {
+    gap: 46px;
+    display: flex;
+  }
+  .last_pair {
+    display: none;
+  }
+  footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .log-in {
+    text-align: center;
+  }
+}

@@ -30,12 +30,15 @@
             up to <span class="accent_text">2500 EUR<br />+ 100 FS</span>
           </h1>
           <div class="coin_text_wrapper">
-            <img src="img/main/coin.png" alt="coin" />
+            <img src="img/main/coin.png" alt="coin" class="coin" />
             <div class="coin_text_text">
               <span>CASINOS</span>
               <span>ANALYZER</span>
             </div>
           </div>
+          <!-- <div class="mobile_image_wrapper">
+            <img src="img/main/Hero bg.png" alt="" />
+          </div> -->
         </div>
         <div class="form_wrapper">
           <form>
@@ -50,7 +53,9 @@
               </select>
             </div>
             <div class="select-wrapper">
-              <select name="country" class="white-item" id="countries"></select>
+              <select name="country" class="white-item" id="countries">
+                <option value="" disabled selected hidden>Choose your country</option>
+              </select>
             </div>
             <label class="container top-container"
               >Receive promos
@@ -64,6 +69,9 @@
               <span class="checkmark"></span>
             </label>
             <input type="submit" value="Submit" class="submit_form_button" />
+            <span class="log-in"
+              >Already have an account? <a href="#" class="accent">Log in</a></span
+            >
           </form>
         </div>
       </div>
@@ -81,10 +89,14 @@
           <img src="img/footer/banktransfer.png" alt="" class="footer_img banktransfer" />
           <img src="img/footer/crypto.png" alt="" class="footer_img crypto" />
         </div>
-        <div class="footer_img_pair">
+        <div class="footer_img_pair last_pair">
           <img src="img/footer/interac.png" alt="" class="footer_img interac" />
           <img src="img/footer/mifinity.png" alt="" class="footer_img mifinity" />
         </div>
+      </div>
+      <div class="footer_img_pair new_mob_pair">
+        <img src="img/footer/interac.png" alt="" class="footer_img interac" />
+        <img src="img/footer/mifinity.png" alt="" class="footer_img mifinity" />
       </div>
     </footer>
     <script src="js/script.js"></script>

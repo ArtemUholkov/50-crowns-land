@@ -17,3 +17,9 @@ header {
 .main-logo {
   width: 100%;
 }
+@media (max-width: 875px) {
+  .header_wrapper {
+    height: 100%;
+    width: 100%;
+  }
+}
