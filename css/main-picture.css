@@ -15,7 +15,7 @@
   flex-direction: column;
 }
 h2 {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 32px;
   line-height: 51px;
   color: #ffffff;
@@ -184,7 +184,7 @@ option {
 /* Create a custom checkbox */
 .checkmark {
   position: absolute;
-  top: 4px;
+  top: 2px;
   left: 0;
   height: 18px;
   width: 18px;
@@ -234,6 +234,9 @@ option {
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
+}
+.bg_mobile {
+  display: none;
 }
 
 @media (min-width: 1500px) {
@@ -392,15 +395,21 @@ option {
     line-height: 32px;
     font-size: 20px;
     margin-top: 31px;
+    z-index: 55;
   }
   h1,
   .accent_text {
     font-weight: 400;
     font-size: 36px;
     line-height: 45px;
+    z-index: 55;
+    margin-bottom: 130px;
   }
   .accent_text {
     font-weight: 900;
+  }
+  .coin_text_wrapper {
+    display: none;
   }
   .coin {
     width: 39px;
@@ -411,5 +420,74 @@ option {
     line-height: 15px;
     letter-spacing: 1px;
     font-weight: 300;
+  }
+  .bg_mobile {
+    display: block;
+    position: absolute;
+    top: -120px;
+    right: 0;
+    z-index: 50;
+    width: 100%;
+    max-height: 375px;
+    max-width: 420px;
+  }
+  h1 {
+    margin-bottom: 70px;
+  }
+  form {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 764px) {
+  .bg_mobile {
+    top: -90px;
+  }
+}
+@media (max-width: 610px) {
+  form {
+    margin-top: 52px;
+  }
+  h1 {
+    margin-bottom: 120px;
+  }
+  .bg_mobile {
+    top: 0;
+  }
+}
+@media (max-width: 500px) {
+  form {
+    align-items: center;
+  }
+  h1 {
+    margin-top: -9px;
+  }
+  .form_item {
+    width: 329px;
+  }
+  .white-item {
+    width: 280px;
+  }
+  .select-wrapper {
+    width: 329px;
+  }
+  .container {
+    padding-left: 0px;
+    max-width: 274px;
+  }
+  .checkmark {
+    top: 2px;
+    left: -30px;
+  }
+  .submit_form_button {
+    width: 328px;
+  }
+  .form_wrapper {
+    display: flex;
+    align-items: center;
+  }
+}
+@media (max-width: 358px) {
+  h1 {
+    font-size: 30px;
   }
 }
