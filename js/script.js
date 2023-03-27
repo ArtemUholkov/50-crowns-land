@@ -22,3 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
       console.log(err);
     });
 });
+
+const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+console.log(timezone);
